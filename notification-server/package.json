@@ -1,0 +1,24 @@
+{
+  "name": "notification-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsnd --respawn --transpile-only src/main/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.23",
+    "ts-node-dev": "1.1.8",
+    "typescript": "4.6.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.12.0",
+    "apollo-server": "3.6.7",
+    "dotenv": "16.0.0",
+    "graphql": "15.3.0",
+    "kafkajs": "1.16.0",
+    "prisma": "^3.12.0",
+    "reflect-metadata": "0.1.13",
+    "type-graphql": "1.1.1"
+  }
+}
