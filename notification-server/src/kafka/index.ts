@@ -6,7 +6,7 @@ if (!process.env.BROKER) throw new Error('Kafka broker is needed')
 
 const kafka = new Kafka({
   clientId: process.env.KAFKACLIENTID ?? 'test',
-  brokers: [process.env.BROKER],
+  brokers: [process.env.BROKER ?? 'localhost:9092'],
   ...(process.env.KAFKAUSERNAME && {
     sasl: {
       mechanism: 'scram-sha-256',
