@@ -1,3 +1,6 @@
+# sqlite
+prisma/database
+
 # Logs
 logs
 *.log
