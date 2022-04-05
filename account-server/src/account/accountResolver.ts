@@ -2,7 +2,7 @@ import { Account } from '@prisma/client';
 import { randomUUID } from 'crypto';
 import { Arg, Int, Mutation, Query, Resolver } from 'type-graphql';
 import { kafkaProducer } from '../kafka';
-import { prisma } from '../main/prismaClient';
+import { prisma } from '../prisma';
 import UserCreateInput from './accountInput';
 import AccountSchema from './accountSchema';
 
